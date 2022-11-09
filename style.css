@@ -96,8 +96,6 @@ body {
   grid-template-columns: 100px repeat(7, 1fr);
   grid-template-rows: repeat(8, 25px);
 }
-.orar div {
-}
 .bg-green {
   border: 1px white solid;
 }
@@ -105,8 +103,38 @@ body {
   border: 1px gray solid;
   background-color: white;
 }
-p {
+.explination {
   font-size: 17px;
   color: rgb(255, 255, 255);
   text-align: center;
+}
+.buttons-bot {
+  justify-content: space-between;
+  display: flex;
+}
+.desc-orar {
+  background-color: rgb(108, 202, 108);
+  color: white;
+  border: 1px white solid;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.student {
+  text-decoration: none;
+  color: rgb(146, 146, 146);
+}
+.exemple {
+  background-color: rgb(108, 202, 108);
+  color: white;
+  border: 1px white solid;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.anunt {
+  background-color: white;
+  padding: 20px;
+  color: rgb(108, 202, 108);
+  font-size: 20px;
 }
