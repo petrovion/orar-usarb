@@ -3,17 +3,24 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
-  color: red;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1300px;
+  margin: 0 auto;
 }
 #orarul {
-  margin-left: 200px;
+  margin-left: 10%;
   width: 450px;
 }
 .curs {
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: white;
   text-align: center;
   padding: 20px;
-  color: black;
+  color: #666;
   font-size: 20px;
 }
 .grupe {
@@ -24,7 +31,7 @@ body {
 }
 .prof {
   color: white;
-  background-color: rgb(108, 202, 108);
+  background-color: #25975a;
   border: 0px;
   width: 120px;
   padding: 8px;
@@ -35,7 +42,7 @@ body {
 }
 .aule {
   color: white;
-  background-color: rgb(108, 202, 108);
+  background-color: #25975a;
   border: 0px;
   width: 100px;
   padding: 8px;
@@ -53,14 +60,17 @@ body {
   margin-top: 20px;
 }
 .serch-bar input {
-  padding: 8px;
+  padding: 9px;
   width: 393px;
   margin-left: 40px;
+  border: 0;
 }
 .serch-bar button {
   width: 42px;
   padding: 8px;
   position: absolute;
+  background-color: white;
+  border: 1px white solid;
 }
 .scroll-box {
   margin-top: 20px;
@@ -86,7 +96,7 @@ body {
   padding: 8px;
 }
 .orar {
-  background-color: rgb(108, 202, 108);
+  background-color: #25975a;
   text-align: center;
   color: white;
   max-width: 450px;
@@ -109,32 +119,78 @@ body {
   text-align: center;
 }
 .buttons-bot {
-  justify-content: space-between;
   display: flex;
 }
 .desc-orar {
-  background-color: rgb(108, 202, 108);
+  display: flex;
+  width: 110px;
+  background-color: #25975a;
   color: white;
   border: 1px white solid;
   border-radius: 4px;
   text-decoration: none;
   padding: 0 10px;
+  margin-left: 20px;
 }
 .student {
+  display: flex;
   text-decoration: none;
   color: rgb(146, 146, 146);
+  margin-left: 20px;
 }
 .exemple {
-  background-color: rgb(108, 202, 108);
+  display: flex;
+  width: 80px;
+  background-color: rgb(245, 74, 74);
   color: white;
   border: 1px white solid;
   border-radius: 4px;
   text-decoration: none;
   padding: 0 10px;
+  margin-left: 20px;
 }
 .anunt {
   background-color: white;
   padding: 20px;
-  color: rgb(108, 202, 108);
+  color: #25975a;
   font-size: 20px;
+}
+#obiectele img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  margin-top: 5px;
+}
+h4 {
+  color: white;
+  font-weight: 900;
+  font-size: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.obiectele-din-ziua {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  background-color: white;
+  margin-bottom: 10px;
+}
+.obiectele-din-ziua div {
+  text-align: center;
+  padding: 20px;
+}
+.bg-greener {
+  color: white;
+  background-color: #25975a;
+  border: 1px white solid;
+}
+.bg-whiter {
+  border-bottom: 1px gray solid;
+  border-top: 1px gray solid;
+  border-right: 1px gray solid;
 }
