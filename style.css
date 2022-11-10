@@ -1,10 +1,7 @@
 body {
   background-image: url(img/new_background_1.png);
-  height: 100%;
   background-position: center;
   background-size: cover;
-}
-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 1300px;
@@ -74,11 +71,33 @@ section {
 }
 .scroll-box {
   margin-top: 20px;
-  height: 80px;
+  height: 100px;
   width: 449px;
   overflow: auto;
   background-color: white;
-  color: rgb(0, 0, 0);
+}
+.scroll-box div {
+  height: 24px;
+  border-top: 1px gray solid;
+}
+.element a {
+  display: flex;
+  margin-top: 3px;
+  text-decoration: none;
+  margin-left: 15px;
+  color: black;
+}
+.element:hover {
+  background-color: antiquewhite;
+}
+.element:hover a {
+  color: #25975a;
+}
+.element:focus-within {
+  background-color: #25975a;
+}
+.element:focus-within a {
+  color: white;
 }
 .ziua-sap select {
   margin-top: 20px;
@@ -96,7 +115,7 @@ section {
   padding: 8px;
 }
 .orar {
-  background-color: #25975a;
+  background-color: white;
   text-align: center;
   color: white;
   max-width: 450px;
@@ -107,11 +126,15 @@ section {
   grid-template-rows: repeat(8, 25px);
 }
 .bg-green {
+  background-color: #25975a;
   border: 1px white solid;
 }
+.item-hover:hover {
+  background-color: antiquewhite;
+}
 .bg-white {
-  border: 1px gray solid;
-  background-color: white;
+  border-right: 1px #666 solid;
+  border-bottom: 1px #666 solid;
 }
 .explination {
   font-size: 17px;
@@ -183,6 +206,10 @@ h4 {
 .obiectele-din-ziua div {
   text-align: center;
   padding: 20px;
+}
+.bg-greener:hover {
+  background-color: antiquewhite;
+  color: black;
 }
 .bg-greener {
   color: white;
